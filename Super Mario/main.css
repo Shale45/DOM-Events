@@ -1,0 +1,57 @@
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  background-image: url("images/bg.jpg");
+  background-color: #0000ff;
+  background-position: left bottom;
+  background-repeat: repeat-x;
+
+}
+
+#button {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  background: #f1c40f;
+}
+
+#container {
+  position: absolute;
+  bottom: 80px;
+  left: 42%;
+  width: 20%;
+  margin: 0 auto ;
+}
+
+.hidden {
+  display: none;
+}
+
+img {
+  max-height: 200px;
+}
+
+.move {
+  animation: animate 10s linear infinite;
+  animation-play-state: paused;
+}
+
+@keyframes animate {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -200%;
+  }
+}
